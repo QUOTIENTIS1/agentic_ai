@@ -1,4 +1,4 @@
-!pip install streamlit transformers torch datasets -q
+
 
 import streamlit as st
 import torch
@@ -70,4 +70,5 @@ if st.button("Generate"):
             st.subheader("Post-processed Code:")
             st.code(processed_code, language="python")
         except Exception as e:
+
             st.error(f"Generation failed: {str(e)}")
